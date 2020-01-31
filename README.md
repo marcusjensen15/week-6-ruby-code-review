@@ -1,6 +1,16 @@
 # README
 
+# _Pet Adoption API_
+
+#### _A great way to know which animals are up for adoption! Janyary 31th, 2020_
+
+#### By _**Marcus Jensen**_
+
+# Description
+
 This API will allow the user to see which animals are available for adoption in our local animal shelter. Users will be able to plug in directly to our api via front end application or service like Postman. The user will be able to: see all of the information for each animal, add new a animal to the shelter, edit an animal's information, and delete an animal once it is adopted. We hope this API will help more animals find loving homes!
+
+## Setup/Installation Requirements
 
 In order to get this application up and running, you must do the following  
 
@@ -12,12 +22,6 @@ In order to get this application up and running, you must do the following
 
 * run 'rails server' in the command line to begin local host.
 
-* Within Postman or a similar technology, you should be able to do a 'get' request to 'http://loacalhost:[your_host_number]/animals'. This will return a list of all the animals within the api. You may also post directly to the API with 
+* Within Postman or a similar technology, you should be able to do a 'get' request to 'http://loacalhost:[your_host_number]/animals'. This will return a list of all the animals within the api. You may also post directly to the API using that same address. If you would like to edit or delete animal specifications, you need to append the animal id number after the address eg: '/4' and adjust your Postman request accordingly.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions.
-
-* ...
+* When adding a new animal, make sure you include all of the necessary key-value pairs. If you miss a field, your edit won't save.
