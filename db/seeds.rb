@@ -14,7 +14,7 @@ class Seed
 
   def generate_animals
     20.times do |i|
-      animal = Quote.create!(
+      animal = Animal.create!(
         name: Faker::FunnyName.three_word_name,
         description: Faker::Hipster.paragraph(sentence_count: 2, supplemental: true),
         type_of_animal: Faker::Creature::Animal.name,
