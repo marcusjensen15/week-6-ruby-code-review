@@ -12,27 +12,21 @@ class AnimalsController < ApplicationController
 
   def create
     @animal = Animal.create!(animal_params)
-    if Animal.find(@animal.id)
-    render status: 200, json: {
-      message: "This animal has been added successfully."
-    }
-  end
-    # json_response(@animal, :created)
+    json_response(@animal, :created)
   end
 
   def update
     @animal = Animal.find(params[:id])
     if @animal.update!(animal_params)
       render status: 200, json: {
-        message: "This animal has been updated successfully."
+        message: "This quote has been updated successfully."
       }
     end
   end
-#implemented a similar message for delete and wasn't working
+
   def destroy
     @animal = Animal.find(params[:id])
     @animal.destroy
-
   end
 
 
