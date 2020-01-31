@@ -25,10 +25,7 @@ class AnimalsController < ApplicationController
      @animal.destroy
    end
 
-   private
-   def json_response(object, status = :ok)
-     render json: object, status: status
-   end
+
 
    def animal_params
      params.permit(:name, :type_of_animal, :description, :age)
