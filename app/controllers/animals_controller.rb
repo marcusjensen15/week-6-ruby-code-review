@@ -28,7 +28,7 @@ class AnimalsController < ApplicationController
       }
     end
   end
-
+#implemented a similar message for delete and wasn't working
   def destroy
     @animal = Animal.find(params[:id])
     @animal.destroy
