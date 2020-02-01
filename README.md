@@ -25,3 +25,21 @@ In order to get this application up and running, you must do the following
 * Within Postman or a similar technology, you should be able to do a 'get' request to 'http://loacalhost:[your_host_number]/animals'. This will return a list of all the animals within the api. You may also post directly to the API using that same address. If you would like to edit or delete animal specifications, you need to append the animal id number after the address eg: '/4' and adjust your Postman request accordingly.
 
 * When adding a new animal, make sure you include all of the necessary key-value pairs. If you miss a field, your edit won't save.
+
+## Known Bugs
+
+_To my knowledge, this bug has no known bugs. please notify me if you encounter one. Everything performing to specs laid out for me in the project guidelines. All spec tests passing_
+
+## Support and contact details
+
+_Marcus Jensen email: marcusjensen1515@gmail.com_
+
+## Technologies Used
+
+_Ruby, SQL, Rails, Postman (for interacting with the API_
+
+### License
+
+*MIT License*
+
+Copyright (c) 2020 **_Marcus Jensen, Epicodus_**
